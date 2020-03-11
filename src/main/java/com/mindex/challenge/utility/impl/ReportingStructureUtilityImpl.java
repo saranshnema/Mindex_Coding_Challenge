@@ -2,7 +2,6 @@ package com.mindex.challenge.utility.impl;
 
 import com.mindex.challenge.data.Employee;
 import com.mindex.challenge.service.EmployeeService;
-import com.mindex.challenge.service.impl.ReportingStructureServiceImpl;
 import com.mindex.challenge.utility.ReportingStructureUtilityService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
