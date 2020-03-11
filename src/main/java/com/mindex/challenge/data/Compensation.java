@@ -54,7 +54,7 @@ public class Compensation {
             throw new ParseException("This date cannot be parsed. Please enter a valid date-time string. Example - yyyy-MM-dd HH:mm:ss  (2020-03-10 23:59:59)", e.getErrorOffset());
         }
 
-        return date.toString();
+        return format.format(date);
     }
 
 }
