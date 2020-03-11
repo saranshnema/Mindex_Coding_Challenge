@@ -28,9 +28,8 @@ public class ReportingStructureUtilityImpl implements ReportingStructureUtilityS
         int numberOfReports = directReports.size();
 
         for(Employee reportees: directReports){
-            System.out.println(reportees.getEmployeeId());
-            Employee current_reportee = employeeService.read(reportees.getEmployeeId());
-            numberOfReports += getNumberOfReports(current_reportee);
+            Employee currentReportee = employeeService.read(reportees.getEmployeeId());
+            numberOfReports += getNumberOfReports(currentReportee);
         }
         return numberOfReports;
     }
